@@ -1,0 +1,85 @@
+
+.home-nav{
+    width: 550px; height: 550px;
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.home-nav .column{
+    width: 115px; height: 100%;
+    position: absolute;
+}
+.home-nav .column:nth-child(1) {
+    left: 50%; top: 0;
+    transform: translate(-50%, 0) rotate(330deg);
+}
+.home-nav .column:nth-child(1) .nav-button{
+    transform: rotate(30deg);
+}
+.home-nav .column:nth-child(2) {
+    left: 50%; top: 0;
+    transform: translate(-50%, 0) rotate(30deg);
+}
+.home-nav .column:nth-child(2) .nav-button{
+    transform: rotate(-30deg);
+}
+.home-nav .column:nth-child(3) {
+    left: 50%; top: 0;
+    transform: translate(-50%, 0) rotate(90deg);
+}
+.home-nav .column:nth-child(3) .nav-button{
+    transform: rotate(-90deg);
+}
+
+.home-nav .column .nav-button:first-child{ position: absolute; top: 0; }
+.home-nav .column .nav-button:last-child{ position: absolute; bottom: 0; }
+.home-nav .column .nav-button{
+    width: 115px; height: 115px;
+    aspect-ratio: 1/1; overflow: hidden;
+    border-radius: 50%; border: 0;
+    background-color: #ffffff;
+    box-shadow: 0 3px 18px 0 rgba(0, 0, 0, 0.15);
+    position: relative; cursor: pointer;
+    transition: all 0.3s;
+}
+.home-nav .column .nav-button:hover{
+    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.3);
+}
+
+.home-nav .column .nav-button img{
+    width: 34px; filter: opacity(60%);
+    position: absolute; left: 50%; top: 36%;
+    transform: translate(-50%, -50%);
+}
+.home-nav .column .nav-button span{
+    font-size: 16px; font-weight: 900; color: #666666;
+    position: absolute; left: 50%; top: 65%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+.home-image{
+    width: 550px; height: 550px;
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%; overflow: hidden;
+}
+.home-image img{
+    width: 350px; height: 388px;
+    object-fit: cover; object-position: center;
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+.home-image .img-overlay{
+    width: 100%; height: 100%;
+    background-color: white;
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+.home-image .my-image{
+    mix-blend-mode: screen;
+}

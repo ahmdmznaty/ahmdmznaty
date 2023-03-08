@@ -1,0 +1,27 @@
+@import url(Home/Home.css);
+@import url(Personal/Personal.css);
+@import url(Skills/Skills.css);
+@import url(Portfolio/Portfolio.css);
+@import url(Experience/Experience.css);
+@import url(Teaching/Teaching.css);
+@import url(Contacts/Contacts.css);
+
+body{
+    background-color: #ffffff;
+    background-image: url(../media/logo-pattern.png);
+    background-size: 200px;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    font-family: Comfortaa;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Comfortaa;
+    src: url(../fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf);
+}
