@@ -96,6 +96,12 @@
 }
 
 
+@media only screen and (max-width: 700px) {
+    .home-nav{ scale: 0.6; }
+    .home-image{ transform-origin: 0 0; scale: 0.6; }
+}
+
+
 
 
 @keyframes rotate {
