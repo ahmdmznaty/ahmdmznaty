@@ -3,6 +3,12 @@ import comket from "../../dependencies/comket.js"
 
 export function ExperienceButton() {
     let parent = comket.button({
+        onclick: () => {
+            let parent = document.querySelector(".content-page")
+            parent.classList.add("active")
+            parent.setAttribute("data-page", "experience")
+            parent.append( ExperiencePage() )
+        },
         class: "nav-button experience-page-button",
         children: [
             comket.img({src: "./media/nav/experience.png"}),
@@ -14,7 +20,10 @@ export function ExperienceButton() {
 
 export default function ExperiencePage() {
     let parent = comket.div({
-        class: "experience-page"
+        class: "experience-page",
+        children: [
+            comket.h1({ text: "Experience" })
+        ]
     })
     return parent
 }

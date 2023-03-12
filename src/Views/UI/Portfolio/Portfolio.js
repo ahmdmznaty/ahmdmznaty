@@ -3,6 +3,12 @@ import comket from "../../dependencies/comket.js"
 
 export function PortfolioButton() {
     let parent = comket.button({
+        onclick: () => {
+            let parent = document.querySelector(".content-page")
+            parent.classList.add("active")
+            parent.setAttribute("data-page", "portfolio")
+            parent.append( PortfolioPage() )
+        },
         class: "nav-button personal-page-button",
         children: [
             comket.img({src: "./media/nav/portfolio.png"}),
@@ -14,7 +20,10 @@ export function PortfolioButton() {
 
 export default function PortfolioPage() {
     let parent = comket.div({
-        class: "portfolio-page"
+        class: "portfolio-page",
+        children: [
+            comket.h1({ text: "Portfolio" })
+        ]
     })
     return parent
 }

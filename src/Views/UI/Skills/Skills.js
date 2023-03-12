@@ -3,6 +3,12 @@ import comket from "../../dependencies/comket.js"
 
 export function SkillsButton() {
     let parent = comket.button({
+        onclick: () => {
+            let parent = document.querySelector(".content-page")
+            parent.classList.add("active")
+            parent.setAttribute("data-page", "skills")
+            parent.append( SkillsPage() )
+        },
         class: "nav-button skills-page-button",
         children: [
             comket.img({src: "./media/nav/skills.png"}),
@@ -14,7 +20,10 @@ export function SkillsButton() {
 
 export default function SkillsPage() {
     let parent = comket.div({
-        class: "skills-page"
+        class: "skills-page",
+        children: [
+            comket.h1({ text: "Skills" })
+        ]
     })
     return parent
 }
