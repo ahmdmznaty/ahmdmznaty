@@ -26,7 +26,7 @@ export default function AboutMeSection() {
                                 class: "about-me-card",
                                 children: [
                                     comket.Element("ion-icon", {name: "time"}),
-                                    comket.span({text: "23"})
+                                    comket.span({text: "23 years old"})
                                 ]
                             }),
                             comket.div({

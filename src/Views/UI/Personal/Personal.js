@@ -3,7 +3,6 @@ import { closeContent } from "../Home/Components/Content.js"
 import WelcomeSection from "./Components/Welcome.js"
 import AboutMeSection from "./Components/AboutMe.js"
 import LearningsSection from "./Components/Learnings.js"
-import LocationSection from "./Components/Location.js"
 import MessageSection from "./Components/Message.js"
 
 
@@ -32,7 +31,6 @@ export default function PersonalPage() {
             WelcomeSection(),
             AboutMeSection(),
             LearningsSection(),
-            LocationSection(),
             MessageSection()
         ]
     })
