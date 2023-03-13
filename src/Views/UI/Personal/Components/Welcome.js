@@ -7,7 +7,6 @@ export default function WelcomeSection() {
     let index = 0
     let letter = 0
     let fillin = setInterval(() => {
-        console.log(window.innerWidth)
         if( document.querySelector("#animatedJobTitle") ) {
             if( jobTitles[index].length == letter ) {
                 letter = 0
