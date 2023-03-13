@@ -131,8 +131,7 @@
     background-color: white; border-radius: 1000px;
     position: absolute; left: 15px; top: 15px;
     box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.3);
-    padding: 20px; overflow: hidden;
-    transition: all 0.4s;
+    overflow: hidden; transition: all 0.4s;
     transform: scale(0);
 }
 .content-page.active{

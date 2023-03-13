@@ -1,9 +1,11 @@
 import comket from "../../dependencies/comket.js"
+import { closeContent } from "../Home/Components/Content.js"
 
 
 export function ExperienceButton() {
     let parent = comket.button({
         onclick: () => {
+            closeContent()
             let parent = document.querySelector(".content-page")
             parent.classList.add("active")
             parent.setAttribute("data-page", "experience")

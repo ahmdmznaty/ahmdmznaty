@@ -1,7 +1,7 @@
 import comket from "../../../dependencies/comket.js";
 
 
-function closeContent() {
+export function closeContent() {
     let parent = document.querySelector(".content-page")
     parent.classList.remove("active")
     parent.replaceChildren(parent.children[0])
