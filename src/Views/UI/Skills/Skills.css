@@ -1,0 +1,76 @@
+
+
+.skills-page{
+    width: 100%; height: 100%; padding: 30px 20px;
+    overflow-x: hidden; overflow-y: auto;
+}
+
+
+
+
+
+.skills-page .header-section{
+    width: 100%; height: 100%;
+    display: flex; flex-direction: row; flex-wrap: wrap;
+    justify-content: center; gap: 20px;
+    align-content: center; margin-bottom: 50px;
+}
+.skills-page .header-section h2{
+    width: 100%; text-align: center; padding: 30px 0;
+    font-size: 50px; color: #00a6ff; font-weight: 900;
+}
+.skills-page .header-section .skills-types{
+    width: 80%; display: flex; flex-direction: row; flex-wrap: wrap;
+    justify-content: center; align-items: center; gap: 40px;
+}
+.skills-page .header-section .skills-types .skill-type-card{
+    width: 270px; height: 100px; border-radius: 4px;
+    overflow: hidden; background-color: #f9f9f9; cursor: pointer;
+    border: 1px solid #eee; display: flex; flex-direction: row; flex-wrap: nowrap;
+    justify-content: center; align-items: center; gap: 10px;
+}
+.skills-page .header-section .skills-types .skill-type-card img{
+    width: 50px;
+}
+.skills-page .header-section .scroll-down{
+    width: 100%; padding: 40px;
+    display: flex; flex-direction: column; flex-wrap: nowrap;
+    justify-content: center; align-items: center;
+}
+.skills-page .header-section .scroll-down button{
+    width: 180px; height: 45px; margin: 10px 0;
+    color: #00a6ff; cursor: pointer;
+    background-color: white; font-size: 18px;
+    border: 1px solid #00a6ff;
+    display: flex; flex-direction: row; flex-wrap: nowrap;
+    justify-content: center; align-items: center;
+    border-radius: 50px; transition: all 0.2s;
+}
+.skills-page .header-section .scroll-down button:hover{
+    background-color: #00a6ff; color: white;
+}
+.skills-page .header-section .scroll-down ion-icon{
+    font-size: 35px; color: #00a6ff;
+    animation: scroll-down 1.6s infinite ease-in-out;
+}
+
+@media only screen and (max-width: 700px) {
+    .skills-page .header-section h2{ font-size: 30px; }
+    .skills-page .header-section .skills-types{ width: 100%; }
+    .skills-page .header-section .skills-types{ gap: 10px; }
+    .skills-page .header-section .scroll-down{ padding: 10px; }
+}
+
+@keyframes scroll-down {
+    0%{ translate: 0 0; }
+    70%{ translate: 0 20px; }
+    100%{ translate: 0 0; }
+}
+
+
+
+
+
+
+
+

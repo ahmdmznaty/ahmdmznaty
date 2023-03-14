@@ -1,5 +1,6 @@
 import comket from "../../dependencies/comket.js"
 import { closeContent } from "../Home/Components/Content.js"
+import HeaderSection from "./Components/Header.js"
 
 
 export function SkillsButton() {
@@ -24,7 +25,7 @@ export default function SkillsPage() {
     let parent = comket.div({
         class: "skills-page",
         children: [
-            comket.h1({ text: "Skills" })
+            HeaderSection(),
         ]
     })
     return parent
