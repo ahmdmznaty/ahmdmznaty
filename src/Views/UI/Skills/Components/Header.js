@@ -11,6 +11,12 @@ export default function HeaderSection() {
                 children: [
                     comket.div({
                         class: "skill-type-card",
+                        onclick: () => {
+                            document.querySelector(".skills-page").scrollTo({
+                                top: document.querySelector(".technical-skills-section").offsetTop - 50,
+                                behavior: "smooth"
+                            })
+                        },
                         children: [
                             comket.img({ src: "./media/skills/types/technicalskills.png" }),
                             comket.h3({ text: "Technical Skills" })
@@ -18,6 +24,12 @@ export default function HeaderSection() {
                     }),
                     comket.div({
                         class: "skill-type-card",
+                        onclick: () => {
+                            document.querySelector(".skills-page").scrollTo({
+                                top: document.querySelector(".languages-section").offsetTop - 50,
+                                behavior: "smooth"
+                            })
+                        },
                         children: [
                             comket.img({ src: "./media/skills/types/languages.png" }),
                             comket.h3({ text: "Languages" })
@@ -25,6 +37,12 @@ export default function HeaderSection() {
                     }),
                     comket.div({
                         class: "skill-type-card",
+                        onclick: () => {
+                            document.querySelector(".skills-page").scrollTo({
+                                top: document.querySelector(".soft-skills-section").offsetTop - 50,
+                                behavior: "smooth"
+                            })
+                        },
                         children: [
                             comket.img({ src: "./media/skills/types/softskills.png" }),
                             comket.h3({ text: "Soft Skills" })
@@ -34,6 +52,12 @@ export default function HeaderSection() {
             }),
             comket.div({
                 class: "scroll-down",
+                onclick: () => {
+                    document.querySelector(".skills-page").scrollBy({
+                        top: window.innerHeight - 50,
+                        behavior: "smooth"
+                    })
+                },
                 children: [
                     comket.button({ text: "Scroll Down" }),
                     comket.Element("ion-icon", { name: "chevron-down" })

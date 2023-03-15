@@ -37,7 +37,7 @@ export default function TechnicalSkillsSection() {
                     let drawCircle = setInterval(() => {
                         increment += 0.5
                         ctx.beginPath();
-                        ctx.lineWidth = 15;
+                        ctx.lineWidth = 13;
                         ctx.lineCap = "round";
                         ctx.strokeStyle = "#00a6ff";
                         ctx.lineJoin = "round";
@@ -97,7 +97,9 @@ export default function TechnicalSkillsSection() {
                             comket.span({ text: skill.description })
                         ]
                     })
-                    newObs.observe( card.querySelector("canvas") )
+                    setTimeout(() => {
+                        newObs.observe( card.querySelector("canvas") )
+                    }, 80);
                     return card
                 })
             })
