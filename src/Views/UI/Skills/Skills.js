@@ -2,6 +2,7 @@ import comket from "../../dependencies/comket.js"
 import { closeContent } from "../Home/Components/Content.js"
 import HeaderSection from "./Components/Header.js"
 import LanguagesSection from "./Components/Languages.js"
+import SoftSkillsSection from "./Components/SoftSkills.js"
 import TechnicalSkillsSection from "./Components/TechnicalSkills.js"
 
 
@@ -29,7 +30,8 @@ export default function SkillsPage() {
         children: [
             HeaderSection(),
             TechnicalSkillsSection(),
-            LanguagesSection()
+            LanguagesSection(),
+            SoftSkillsSection()
         ]
     })
     return parent
