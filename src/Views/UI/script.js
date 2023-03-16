@@ -7,4 +7,4 @@ document.body.append( HomePage() )
 /**
  * @tobe removed
  */
-// document.querySelector(".nav-button.skills-page-button").click()
+// document.querySelector(".nav-button.contacts-page-button").click()

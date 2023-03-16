@@ -5,7 +5,7 @@ export default function AboutMeSection() {
     let parent = comket.div({
         class: "about-me-section",
         children: [
-            comket.h2({ text: "About Me" }),
+            comket.h3({ text: "About Me" }),
             comket.div({
                 class: "about-me-details",
                 children: [

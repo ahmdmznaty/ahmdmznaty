@@ -5,7 +5,7 @@ export default function LearningsSection() {
     let parent = comket.div({
         class: "learnings-section",
         children: [
-            comket.h2({ text: "Learning" }),
+            comket.h3({ text: "Learning" }),
             comket.div({
                 class: "learning-details",
                 children: [

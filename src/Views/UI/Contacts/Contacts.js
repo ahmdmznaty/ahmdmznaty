@@ -1,5 +1,9 @@
 import comket from "../../dependencies/comket.js"
 import { closeContent } from "../Home/Components/Content.js"
+import ContactMeSection from "./Components/ContactMe.js"
+import VisitMeSection from "./Components/VisitMe.js"
+import Message from "../Personal/Components/Message.js"
+import HeaderSection from "./Components/Header.js"
 
 
 export function ContactsButton() {
@@ -24,7 +28,10 @@ export default function ContactsPage() {
     let parent = comket.div({
         class: "contacts-page",
         children: [
-            comket.h1({ text: "Contacts" })
+            HeaderSection(),
+            ContactMeSection(),
+            VisitMeSection(),
+            Message()
         ]
     })
     return parent

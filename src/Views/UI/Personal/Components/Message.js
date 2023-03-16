@@ -5,7 +5,7 @@ export default function MessageSection() {
     let parent = comket.div({
         class: "message-section",
         children: [
-            comket.h2({ text: "Message Me" }),
+            comket.h3({ text: "Message Me" }),
             comket.form({
                 class: "message-me-form",
                 children: [
