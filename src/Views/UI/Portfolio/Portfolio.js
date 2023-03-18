@@ -1,5 +1,7 @@
 import comket from "../../dependencies/comket.js"
 import { closeContent } from "../Home/Components/Content.js"
+import HeaderSection from "./Components/Header.js"
+import ProjectsSection from "./Components/Projects.js"
 
 
 export function PortfolioButton() {
@@ -11,7 +13,7 @@ export function PortfolioButton() {
             parent.setAttribute("data-page", "portfolio")
             parent.append( PortfolioPage() )
         },
-        class: "nav-button personal-page-button",
+        class: "nav-button portfolio-page-button",
         children: [
             comket.img({src: "./media/nav/portfolio.png"}),
             comket.span({text: "portfolio"})
@@ -24,7 +26,8 @@ export default function PortfolioPage() {
     let parent = comket.div({
         class: "portfolio-page",
         children: [
-            comket.h1({ text: "Portfolio" })
+            HeaderSection(),
+            ProjectsSection(),
         ]
     })
     return parent
