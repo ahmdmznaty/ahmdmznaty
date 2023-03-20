@@ -1,5 +1,5 @@
 import comket from "../../../dependencies/comket.js"
-import projects from "../../../projects/database.js"
+import projects from "../../../database/projects.js"
 
 
 function filterCards(parent) {
@@ -13,7 +13,7 @@ function filterCards(parent) {
             let card = comket.div({
                 class: "project-card",
                 children: [
-                    comket.img({ src: `./media/portfolio/projects/${project.title.toLowerCase()}.png` }),
+                    comket.img({ src: `./media/portfolio/projects/${project.title.replaceAll(" ", "")}.png` }),
                     comket.h4({ text: project.title }),
                     comket.p({ text: project.description }),
                     comket.div({

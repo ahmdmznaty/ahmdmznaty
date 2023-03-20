@@ -2,6 +2,7 @@ import comket from "../../dependencies/comket.js"
 import { closeContent } from "../Home/Components/Content.js"
 import HeaderSection from "./Components/Header.js"
 import ProjectsSection from "./Components/Projects.js"
+import VideosSection from "./Components/Videos.js"
 
 
 export function PortfolioButton() {
@@ -28,6 +29,7 @@ export default function PortfolioPage() {
         children: [
             HeaderSection(),
             ProjectsSection(),
+            VideosSection()
         ]
     })
     return parent
