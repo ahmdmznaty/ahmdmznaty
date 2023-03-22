@@ -1,5 +1,8 @@
 import comket from "../../dependencies/comket.js"
 import { closeContent } from "../Home/Components/Content.js"
+import ArticlesSection from "./Components/Articles.js"
+import CoursesSection from "./Components/Courses.js"
+import HeaderSection from "./Components/Header.js"
 
 
 export function TeachingButton() {
@@ -24,7 +27,9 @@ export default function TeachingPage() {
     let parent = comket.div({
         class: "teaching-page",
         children: [
-            comket.h1({ text: "Teaching" })
+            HeaderSection(),
+            CoursesSection(),
+            ArticlesSection()
         ]
     })
     return parent
