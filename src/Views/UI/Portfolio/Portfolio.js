@@ -13,6 +13,9 @@ export function PortfolioButton() {
             parent.classList.add("active")
             parent.setAttribute("data-page", "portfolio")
             parent.append( PortfolioPage() )
+            document.querySelector(".home-nav").classList.remove("animated")
+            document.querySelector(".home-image").classList.remove("animated")
+            parent.setAttribute("data-page", "portfolio")
         },
         class: "nav-button portfolio-page-button",
         children: [

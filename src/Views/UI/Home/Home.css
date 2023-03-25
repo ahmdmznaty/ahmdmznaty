@@ -6,6 +6,10 @@
     border-radius: 50%;
     transform-origin: 0 0;
     animation: rotate 120s infinite linear;
+    animation-play-state: paused;
+}
+.home-nav.animated{
+    animation-play-state: running;
 }
 
 .home-nav .column{
@@ -45,9 +49,16 @@
     position: relative; cursor: pointer;
     transition: all 0.3s;
     animation: rotate-reverse 120s infinite linear;
+    animation-play-state: paused;
+}
+.home-nav.animated .column .nav-button{
+    animation-play-state: running;
 }
 .home-nav .column .nav-button:hover{
     box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.3);
+}
+.home-nav .column .nav-button:focus{
+    outline: 2px solid #00a6ff;
 }
 
 .home-nav .column .nav-button img{
@@ -93,6 +104,10 @@
 .home-image .clip-image{
     transform-origin: 0 0;
     animation: rotate 120s infinite linear;
+    animation-play-state: paused;
+}
+.home-image.animated .clip-image{
+    animation-play-state: running;
 }
 
 
@@ -145,7 +160,7 @@
     background-color: #fff; cursor: pointer;
     border: 0; border-radius: 50%;
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.1);
-    transition: all 0.2s;
+    transition: all 0.2s; z-index: 1000;
 }
 .content-page .close-content:hover{
     box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);

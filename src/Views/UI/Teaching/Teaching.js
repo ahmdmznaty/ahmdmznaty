@@ -13,6 +13,9 @@ export function TeachingButton() {
             parent.classList.add("active")
             parent.setAttribute("data-page", "teaching")
             parent.append( TeachingPage() )
+            document.querySelector(".home-nav").classList.remove("animated")
+            document.querySelector(".home-image").classList.remove("animated")
+            parent.setAttribute("data-page", "teaching")
         },
         class: "nav-button teaching-page-button",
         children: [

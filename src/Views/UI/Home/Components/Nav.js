@@ -9,7 +9,7 @@ import { ExperienceButton } from "../../Experience/Experience.js";
 
 export default function Nav() {
     let parent = comket.div({
-        class: "home-nav",
+        class: "home-nav animated",
         children: [
             comket.div({
                 class: "column",

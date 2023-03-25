@@ -14,6 +14,9 @@ export function ContactsButton() {
             parent.classList.add("active")
             parent.setAttribute("data-page", "contacts")
             parent.append( ContactsPage() )
+            document.querySelector(".home-nav").classList.remove("animated")
+            document.querySelector(".home-image").classList.remove("animated")
+            parent.setAttribute("data-page", "contacts")
         },
         class: "nav-button contacts-page-button",
         children: [

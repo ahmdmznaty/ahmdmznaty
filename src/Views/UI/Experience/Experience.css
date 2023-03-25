@@ -1,0 +1,267 @@
+
+
+.experience-page{
+    width: 100%; height: 100%;
+    overflow-x: hidden; overflow-y: auto;
+    scroll-snap-type: y mandatory;
+}
+
+
+
+
+
+.time-line{
+    width: 100%; height: 100%;
+    position: absolute; left: 0; top: 0;
+}
+.time-line div{
+    width: 5px; height: 80px; background-color: #00a6ff;
+    position: absolute; left: 50%; transform: translate(-50%, 0);
+}
+.time-line div::before{
+    content: ""; width: 16px; height: 16px;
+    background-color: #00a6ff; border-radius: 50%;
+    position: absolute; left: 50%; z-index: 2;
+    transform: translate(-50%, 0);
+}
+.time-line div::after{
+    content: ""; width: 60px; height: 60px;
+    background-color: #00a6ff24; border-radius: 50%;
+    position: absolute; left: 50%; z-index: 1;
+    transform: translate(-50%, 0) scale(0.5);
+    animation: bubble 1s infinite alternate;
+}
+.time-line-top{ top: 0; }
+.time-line-top::before{ bottom: -8px; }
+.time-line-top::after{ bottom: -30px; }
+.time-line-bottom{ bottom: 0; }
+.time-line-bottom::before{ top: -8px; }
+.time-line-bottom::after{ top: -30px; }
+.time-line div.final::before{
+    width: 60px; height: 4px;
+    border-radius: 4px;
+    top: -2px;
+}
+.time-line div.final::after{
+    display: none;
+}
+.time-line div.final{
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+
+
+
+
+.experience-page .header-section{
+    width: 100%; height: 100%; position: relative;
+    display: flex; flex-direction: column; flex-wrap: nowrap;
+    justify-content: center; gap: 40px; align-items: center;
+    scroll-snap-align: center;
+}
+.experience-page .header-section img{
+    width: 250px;
+}
+.experience-page .header-section h2{
+    width: 100%; text-align: center; padding: 10px 0;
+    font-size: 40px; color: #00a6ff; font-weight: 900;
+}
+.experience-page .header-section h3{
+    width: 100%; text-align: center; padding: 5px 0;
+    font-size: 22px; color: #666; font-weight: 500;
+}
+.experience-page .header-section .scroll-down{
+    width: 100%; padding: 0px;
+    display: flex; flex-direction: column; flex-wrap: nowrap;
+    justify-content: center; align-items: center;
+}
+.experience-page .header-section .scroll-down button{
+    width: 180px; height: 45px; margin: 10px 0;
+    color: #00a6ff; cursor: pointer;
+    background-color: white; font-size: 18px;
+    border: 1px solid #00a6ff;
+    display: flex; flex-direction: row; flex-wrap: nowrap;
+    justify-content: center; align-items: center;
+    border-radius: 50px; transition: all 0.2s;
+}
+.experience-page .header-section .scroll-down button:hover{
+    background-color: #00a6ff; color: white;
+}
+.experience-page .header-section .scroll-down ion-icon{
+    font-size: 35px; color: #00a6ff;
+    animation: scroll-down 1.6s infinite ease-in-out;
+}
+
+@media only screen and (max-width: 700px) {
+    .experience-page .header-section img{ width: 200px; }
+    .experience-page .header-section h2{
+        font-size: 32px;
+    }
+    .experience-page .header-section h3{
+        font-size: 20px;
+    }
+}
+
+@keyframes bubble {
+    0%{ transform: translate(-50%, 0) scale(0.3); }
+    100%{ transform: translate(-50%, 0) scale(1.3); }
+}
+
+
+
+
+
+.experience-page .experience-section{
+    width: 100%; height: 100%; position: relative;
+    display: flex; flex-direction: column; flex-wrap: nowrap;
+    justify-content: center; gap: 30px; align-items: center;
+    scroll-snap-align: center;
+    text-align: center;
+}
+.experience-page .experience-section .experience-top h3{
+    font-size: 34px; color: #00a6ff; font-weight: 700;
+}
+.experience-page .experience-section .experience-top p{
+    font-size: 16px; color: #888; margin: 10px 0;
+}
+.experience-page .experience-section .experience-top>div{
+    display: inline-block;
+    width: 360px; height: 50px;
+    display: flex; flex-direction: row; flex-wrap: nowrap;
+    justify-content: space-between; align-items: center; gap: 20px;
+}
+.experience-page .experience-section .experience-top>div span{
+    white-space: nowrap;
+}
+.experience-page .experience-section .experience-top>div div{
+    width: 100%; height: 2px; background-color: #00a6ff;
+    position: relative;
+}
+.experience-page .experience-section .experience-top>div div::before{
+    content: "";
+    width: 6px; height: 6px; background-color: #00a6ff;
+    border-radius: 50%;
+    position: absolute; left: -3px; top: 50%;
+    transform: translate(0, -50%);
+    box-shadow: 0 0 0 5px #00a6ff24;
+    animation: bubble2 1s infinite alternate;
+}
+.experience-page .experience-section .experience-top>div div::after{
+    content: "";
+    width: 6px; height: 6px; background-color: #00a6ff;
+    border-radius: 50%; transform: translate(0, -50%);
+    position: absolute; right: -3px; top: 50%;
+    box-shadow: 0 0 0 5px #00a6ff24;
+    animation: bubble2 1s infinite alternate;
+}
+.experience-page .experience-section .experience-center img{
+    width: 80px; height: 80px; border-radius: 50%;
+    border: 1px solid #ddd;
+}
+.experience-page .experience-section .experience-center p{
+    font-size: 22px; margin-top: 10px;
+}
+.experience-page .experience-section>p{
+    width: 90%; max-width: 800px; padding: 20px;
+    font-size: 20px; font-weight: 400; color: #444;
+    box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 700px) {
+    .experience-page .experience-section .experience-top h3{ font-size: 24px; }
+    .experience-page .experience-section .experience-top div{ width: 280px; }
+}
+
+@keyframes bubble2 {
+    0%{ box-shadow: 0 0 0 5px #00a6ff24; }
+    100%{ box-shadow: 0 0 0 6px #00a6ff24; }
+}
+
+
+
+
+
+.experience-page .courses-section{
+    width: 100%; height: 100%; position: relative;
+    display: flex; flex-direction: column; flex-wrap: nowrap;
+    justify-content: flex-start; gap: 30px; align-items: center;
+    text-align: center; padding-top: 70px;
+    scroll-snap-align: center;
+}
+.experience-page .courses-section h3{
+    text-align: center; margin-bottom: 40px;
+    width: fit-content; background-color: #fff;
+    position: relative; color: #666; padding: 0 15px;
+}
+.experience-page .courses-section h3::before{
+    content: "";
+    width: 80vw; height: 1px;
+    background-color: #bbb;
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.experience-page .courses-section .courses-cards{
+    width: 80%; padding: 10px;
+    display: flex; flex-direction: row; flex-wrap: nowrap;
+    justify-content: flex-start; align-items: center; gap: 20px;
+}
+.experience-page .courses-section .courses-cards .course-card{
+    max-width: 280px; min-width: 280px; height: 360px; padding: 5px;
+    overflow: hidden; border-radius: 5px;
+    box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.1);
+}
+.experience-page .courses-section .courses-cards .course-card>img{
+    width: 268px; height: 150px; object-fit: cover; object-position: center;
+    border: 1px solid #ddd; border-radius: 4px;
+}
+.experience-page .courses-section .courses-cards .course-card h4{
+    width: auto; height: 72px; text-align: center; font-size: 16px;
+    overflow-x: auto; overflow-y: hidden; margin: 8px;
+    line-height: 140%; display: flex; justify-content: center;
+    align-items: center;
+}
+.experience-page .courses-section .courses-cards .course-card .owner{
+    width: 100%; margin: 5px; padding: 0 10px;
+    display: flex; flex-direction: row; flex-wrap: nowrap;
+    justify-content: center; align-items: center; gap: 10px;
+}
+.experience-page .courses-section .courses-cards .course-card .owner img{
+    width: 40px; height: 40px; border-radius: 50%;
+    border: 1px solid #ddd;
+}
+.experience-page .courses-section .courses-cards .course-card .owner span{
+    text-align: left; font-size: 16px;
+}
+.experience-page .courses-section .courses-cards .course-card a{
+    width: 160px; height: 38px; text-decoration: none;
+    background-color: #00a6ff; color: #fff; margin: 10px auto;
+    display: flex; flex-direction: row; flex-wrap: nowrap;
+    justify-content: center; align-items: center;
+    border-radius: 40px; transition: all 0.3s;
+}
+.experience-page .courses-section .courses-cards .course-card a:hover{
+    background-color: #fff; color: #00a6ff;
+    box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.2);
+}
+.experience-page .courses-section .cards-navigator{
+    display: flex; flex-direction: row; flex-wrap: nowrap;
+    justify-content: center; align-items: center; gap: 40px;
+    padding: 40px 20px;
+}
+.experience-page .courses-section .cards-navigator button{
+    width: 45px; height: 45px; font-size: 30px; color: #fff;
+    display: flex; justify-content: center; align-items: center;
+    background-color: #00a6ff; border: 0; border-radius: 5px;
+    cursor: pointer; transition: all 0.3s;
+}
+.experience-page .courses-section .cards-navigator button:hover{
+    background-color: #fff; color: #00a6ff;
+    box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 700px) {
+    .experience-page .courses-section .courses-cards{ width: 98%; }
+}

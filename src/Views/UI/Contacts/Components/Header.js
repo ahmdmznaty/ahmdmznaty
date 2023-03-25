@@ -15,14 +15,16 @@ export default function HeaderSection() {
             }),
             comket.div({
                 class: "scroll-down",
-                onclick: () => {
-                    document.querySelector(".contacts-page").scrollBy({
-                        top: window.innerHeight - 50,
-                        behavior: "smooth"
-                    })
-                },
                 children: [
-                    comket.button({ text: "Scroll Down" }),
+                    comket.button({
+                        text: "Scroll Down",
+                        onclick: () => {
+                            document.querySelector(".contacts-page").scrollBy({
+                                top: window.innerHeight - 50,
+                                behavior: "smooth"
+                            })
+                        },
+                    }),
                     comket.Element("ion-icon", { name: "chevron-down" })
                 ]
             })

@@ -14,6 +14,9 @@ export function PersonalButton() {
             parent.classList.add("active")
             parent.setAttribute("data-page", "personal")
             parent.append( PersonalPage() )
+            document.querySelector(".home-nav").classList.remove("animated")
+            document.querySelector(".home-image").classList.remove("animated")
+            parent.setAttribute("data-page", "personal")
         },
         class: "nav-button personal-page-button",
         children: [
