@@ -192,3 +192,28 @@
 }
 
 
+
+
+
+.response-message{
+    width: fit-content; padding: 15px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.2);
+    position: absolute; left: 50%; bottom: -50px;
+    transform: translate(-50%, 0);
+    animation: showup 2s alternate 2;
+    z-index: 1000;
+}
+.response-message.done{
+    background-color: #d5ffda;
+}
+.response-message.error{
+    background-color: #ffcece;
+}
+
+@keyframes showup {
+    0%{ bottom: -50px; }
+    30%{ bottom: 50px; }
+    100%{ bottom: 50px; }
+}

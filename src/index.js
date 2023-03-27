@@ -3,13 +3,14 @@ import fs from "fs/promises"
 import dotenv from "dotenv"
 dotenv.config()
 import frontEnd from "./Routes/FrontEndRoute.js"
+import messageMe from "./Routes/MessageMeRoute.js"
 
 http.createServer((req, res) => {
     let url = req.url
     if( url[0] === "/" ) url.split("").splice(0, 1).join("")
-    if(url.split("/")[0] !== "api") frontEnd(req, res)
+    if(!url.split("/").includes("api")) frontEnd(req, res)
     else {
-        // route the api
+        messageMe(req, res)
     }
 }).listen(process.env.DEVELOPMENT_PORT, () => {
 })
