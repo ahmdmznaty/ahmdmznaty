@@ -25,8 +25,8 @@ function filterCards(parent) {
                     comket.div({
                         class: "project-actions",
                         children: [
-                            comket.a({ text: "Code", href: project.githubURL }),
-                            comket.a({ text: "View", href: "#" }),
+                            comket.a({ text: "Code", target: "_blank", href: project.githubURL }),
+                            comket.a({ text: "View", target: "_blank", href: project.viewURL }),
                         ]
                     })
                 ]
@@ -37,6 +37,12 @@ function filterCards(parent) {
     );
 }
 export default function ProjectsSection() {
+    let departments = new Set()
+    projects.forEach(project => {
+        project.department.forEach(department => {
+            departments.add(department)
+        });
+    })
     let parent = comket.div({
         class: "projects-section",
         children: [
@@ -49,17 +55,10 @@ export default function ProjectsSection() {
                 children: [
                     comket.div({
                         class: "projects-filter-nav",
-                        children: [
-                            comket.button({ class: "projects-filter-button active-filter", text: "All" }),
-                            comket.button({ class: "projects-filter-button", text: "Web Design" }),
-                            comket.button({ class: "projects-filter-button", text: "Front End" }),
-                            comket.button({ class: "projects-filter-button", text: "JavaScript" }),
-                            comket.button({ class: "projects-filter-button", text: "Back End" }),
-                            comket.button({ class: "projects-filter-button", text: "Full Stack" }),
-                            comket.button({ class: "projects-filter-button", text: "UI/UX Design" }),
-                            comket.button({ class: "projects-filter-button", text: "Animations" }),
-                            comket.button({ class: "projects-filter-button", text: "Small Apps" }),
-                        ]
+                        children:
+                            ["All", ...departments].map((department, index) => {
+                                return comket.button({ class: `projects-filter-button ${!index ? "active-filter" : ""}`, text: department })
+                            })
                     }),
                     comket.div({
                         class: "projects-filter-cards",

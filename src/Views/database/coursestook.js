@@ -60,7 +60,7 @@ let courses = [
         url: "https://www.youtube.com/playlist?list=PLDoPjvoNmBAxdetco1wwicE7Fbm73UYy0"
     },
     {
-        title: "Mastering Python - تعلم بايثون",
+        title: "Mastering Python",
         owner: "Elzero Web School",
         url: "https://www.youtube.com/playlist?list=PLDoPjvoNmBAyE_gei5d18qkfIe-Z8mocs"
     },
@@ -100,12 +100,12 @@ let courses = [
         url: "https://www.youtube.com/playlist?list=PLF8OvnCBlEY37hfjvXvqnutMJ82QU5g2d"
     },
     {
-        title: "Python Tutorials Arabic|| دورة برمجة بايثون",
+        title: "Python Tutorials Arabic",
         owner: "The New Baghdad",
         url: "https://www.youtube.com/playlist?list=PLF8OvnCBlEY1j4hxoqXqJk08ASU7D_W87"
     },
     {
-        title: "Python GUI Tutorials || الواجهات الرسومية بالبايثون",
+        title: "Python GUI Tutorials",
         owner: "The New Baghdad",
         url: "https://www.youtube.com/playlist?list=PLF8OvnCBlEY0S3aX6k28GK0mUd_Fm-OKv"
     },

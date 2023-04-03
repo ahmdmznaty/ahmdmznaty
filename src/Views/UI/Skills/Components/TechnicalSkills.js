@@ -1,30 +1,6 @@
 import comket from "../../../dependencies/comket.js"
+import technicalSkills from "../../../database/technical-skills.js";
 
-
-let technicalSkills = [
-    {title: "HTML", percentage: 85, description: "Builds The Structure"},
-    {title: "CSS", percentage: 75, description: "Style & Layout"},
-    {title: "Javascript", percentage: 68, description: "Activity & Behavior"},
-    {title: "Node JS", percentage: 60, description: "Server Side"},
-    {title: "Express JS", percentage: 48, description: "API Controller"},
-    {title: "React JS", percentage: 53, description: "Component Library :)"},
-    {title: "Swiper JS", percentage: 74, description: "Colossal Library"},
-    {title: "Sal JS", percentage: 71, description: "Scroll Animation Library"},
-    {title: "Tailwind CSS", percentage: 47, description: "Utility Classes Library"},
-    {title: "Bootstrap", percentage: 56, description: "Components & Utility Classes"},
-    {title: "Sass", percentage: 47, description: "Style Preprocessor"},
-    {title: "Snowpack", percentage: 40, description: "Bundler & Server Simulation"},
-    {title: "Parcel", percentage: 40, description: "Bundler & Server Simulation"},
-    {title: "Webpack", percentage: 37, description: "The Best Bundler In The World"},
-    {title: "MongoDB", percentage: 42, description: "NoSQL Database"},
-    {title: "MySQL", percentage: 43, description: "SQL Database"},
-    {title: "MapBox", percentage: 64, description: "API For Maps & Locations"},
-    {title: "Command Line", percentage: 79, description: "Control Our Computers :)"},
-    {title: "Git", percentage: 70, description: "Version Control System"},
-    {title: "GitHub", percentage: 65, description: "Git Remote Controller"},
-    {title: "VS Code", percentage: 82, description: "Text Editor Or IDE :)"},
-    {title: "Dev Tools", percentage: 75, description: "Tracking The Development Process"},
-]
 
 export default function TechnicalSkillsSection() {
     let newObs = new IntersectionObserver(entries => {

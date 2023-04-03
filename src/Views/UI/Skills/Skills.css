@@ -115,7 +115,7 @@
 }
 
 .skills-page .technical-skills-section .technical-skills-list .technical-skill-card p{
-    color: #00a6ff; font-weight: 600;
+    color: #00a6ff; font-weight: 600; white-space: nowrap;
 }
 .skills-page .technical-skills-section .technical-skills-list .technical-skill-card span{
     width: 100%; opacity: 0; visibility: hidden;

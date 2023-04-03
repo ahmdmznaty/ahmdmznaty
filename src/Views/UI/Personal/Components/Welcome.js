@@ -31,8 +31,8 @@ export default function WelcomeSection() {
                     comket.p({ text: "welcome mr visitor" }),
                     comket.h1({ children: [ "I'm ", comket.span({text: "Ahmed M. Znaty"}) ] }),
                     animatedJobTitle,
-                    comket.a({ href:"#", text: "Hire Me" }),
-                    comket.a({ href:"#", text: "Download CV" })
+                    comket.a({ target: "_blank", href:"https://www.upwork.com/freelancers/~016c0254f4053a631a", text: "Hire Me" }),
+                    comket.a({ href:"./media/CV.pdf", text: "Download CV", download: "ahmdmznaty_cv" })
                 ]
             })
         ]
