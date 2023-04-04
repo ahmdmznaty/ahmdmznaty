@@ -17,7 +17,7 @@ export default function messageMe(req, res) {
                 service: 'gmail',
                 auth: {
                     user: process.env.GMAIL,
-                    pass: process.env.GPASSWORD
+                    pass: process.env.GPASSWORDHeroku
                 }
             });
             
