@@ -45,7 +45,7 @@ export default function messageMe(req, res) {
                                 if(err) {
                                     fs.writeFile("./error.txt", err, () => {})
                                     res.statusCode = 500
-                                    res.end("error")
+                                    res.end(err)
                                 }
                                 else {
                                     res.statusCode = 200
