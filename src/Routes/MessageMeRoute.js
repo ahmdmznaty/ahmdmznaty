@@ -38,7 +38,7 @@ export default function messageMe(req, res) {
                     transporter.sendMail(mailOptions, function(error, info){
                         if (error) {
                             res.statusCode = 500
-                            res.end("error")
+                            res.end(`error from here: ${JSON.stringify(error)}`)
                         } else {
                             // data.push(jsondata)
                             // fs.writeFile("./messages.json", JSON.stringify(data), error => {
