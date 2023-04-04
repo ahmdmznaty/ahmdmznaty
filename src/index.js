@@ -12,5 +12,5 @@ http.createServer((req, res) => {
     else {
         messageMe(req, res)
     }
-}).listen(process.env.DEVELOPMENT_PORT, () => {
+}).listen(process.env.PORT || 3000, () => {
 })
