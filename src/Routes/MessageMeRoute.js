@@ -37,16 +37,14 @@ export default function messageMe(req, res) {
                 else {
                     transporter.sendMail(mailOptions, function(error, info){
                         if (error) {
-                            fs.writeFile("./error.txt", JSON.stringify(error), () => {})
                             res.statusCode = 500
                             res.end(error)
                         } else {
                             data.push(jsondata)
                             fs.writeFile("./messages.json", JSON.stringify(data), error => {
                                 if(error) {
-                                    fs.writeFile("./error.txt", error, () => {})
                                     res.statusCode = 500
-                                    res.end(req.url)
+                                    res.end("error")
                                 }
                                 else {
                                     res.statusCode = 200
