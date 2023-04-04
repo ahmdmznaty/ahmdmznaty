@@ -42,14 +42,14 @@ export default function messageMe(req, res) {
                         } else {
                             // data.push(jsondata)
                             // fs.writeFile("./messages.json", JSON.stringify(data), error => {
-                                if(error) {
-                                    res.statusCode = 500
-                                    res.end("error")
-                                }
-                                else {
+                                // if(error) {
+                                //     res.statusCode = 500
+                                //     res.end("error")
+                                // }
+                                // else {
                                     res.statusCode = 200
                                     res.end("done")
-                                }
+                                // }
                             // })
                         }
                     });
