@@ -31,17 +31,26 @@ export default function messageMe(req, res) {
             fs.readFile("./messages.json", "utf8", (err, data) => {
                 data = JSON.parse(data)
                 if(data.some(message => (message.name == jsondata.name && (message.email == jsondata.email || message.whatsapp == jsondata.whatsapp)))) {
+                    res.statusCode = 500
                     res.end("error")
                 }
                 else {
                     transporter.sendMail(mailOptions, function(error, info){
                         if (error) {
+                            res.statusCode = 500
                             res.end("error")
                         } else {
                             data.push(jsondata)
                             fs.writeFile("./messages.json", JSON.stringify(data), err => {
-                                if(err) res.end("error")
-                                else res.end("done")
+                                if(err) {
+                                    fs.writeFile("./error.txt", err, () => {})
+                                    res.statusCode = 500
+                                    res.end("error")
+                                }
+                                else {
+                                    res.statusCode = 200
+                                    res.end("done")
+                                }
                             })
                         }
                     });
