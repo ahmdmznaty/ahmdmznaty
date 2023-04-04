@@ -1,4 +1,5 @@
 import nodemailer from "nodemailer"
+import smtpTransport from "nodemailer-smtp-transport"
 import fs from "fs"
 import dotenv from "dotenv"
 dotenv.config()
@@ -13,13 +14,13 @@ export default function messageMe(req, res) {
         req.on("end", () => {
             jsondata = JSON.parse(Buffer.concat(data).toString())
 
-            var transporter = nodemailer.createTransport({
+            var transporter = nodemailer.createTransport(smtpTransport({
                 service: 'gmail',
                 auth: {
                     user: process.env.GMAIL,
                     pass: process.env.GPASSWORDHeroku
                 }
-            });
+            }));
             
             var mailOptions = {
                 from: 'ahmd53mhmd@gmail.com',
