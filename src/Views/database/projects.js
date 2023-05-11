@@ -2,6 +2,22 @@
 
 let projects = [
     {
+        title: "Quiz App",
+        description: "Simple and creative quiz app using API to get questions",
+        githubURL: "https://github.com/webket/QuizApp",
+        viewURL: "https://webket.github.io/QuizApp",
+        technologies: ["html", "css", "javascript"],
+        department: ["front end"]
+    },
+    {
+        title: "Clone Ed-Circle UI",
+        description: "Cloning an education website UI from figma and making it responsive",
+        githubURL: "https://github.com/webket/FigmaDesign",
+        viewURL: "https://webket.github.io/FigmaDesign/",
+        technologies: ["html", "css", "javascript"],
+        department: ["front end"]
+    },
+    {
         title: "Courses Tracking App",
         description: "A responsive application for tracking courses and courses' tasks",
         githubURL: "https://github.com/ahmdmznaty/simple-portfolio-apps/tree/main/CoursesTrackingApp",

@@ -52,6 +52,9 @@ let technicalSkills = [
     {
         title: "Sass", percentage: 47, description: "Style Preprocessor" },
     {
+        title: "TypeScript", percentage: 60, description: "Type Based Scripts"
+    },
+    {
         title: "Snowpack",
         percentage: 40,
         description: "Bundler & Server Simulation",
