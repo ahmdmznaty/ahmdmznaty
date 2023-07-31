@@ -1,22 +1,21 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "ahmed m. znaty portfolio",
-  "main": "src/index.js",
-  "type": "module",
-  "scripts": {
-    "start": "node src/index.js",
-    "test": "nodemon src/index.js"
-  },
-  "author": "ahmdmznaty",
-  "license": "ISC",
-  "devDependencies": {
-    "nodemon": "^2.0.21"
-  },
-  "dependencies": {
-    "dotenv": "^16.0.3",
-    "mime": "^3.0.0",
-    "nodemailer": "^6.9.1",
-    "swiper": "^9.1.1"
-  }
+    "name": "portfolio",
+    "version": "1.0.0",
+    "description": "ahmed m. znaty portfolio",
+    "main": "src/index.js",
+    "type": "module",
+    "scripts": {
+        "start": "node src/index.js",
+        "test": "nodemon src/index.js"
+    },
+    "author": "ahmdmznaty",
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^2.0.21"
+    },
+    "dependencies": {
+        "dotenv": "^16.0.3",
+        "mime": "^3.0.0",
+        "nodemailer": "^6.9.1"
+    }
 }

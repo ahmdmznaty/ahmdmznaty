@@ -13,15 +13,15 @@ export function ExperienceButton() {
             let parent = document.querySelector(".content-page")
             parent.classList.add("active")
             parent.setAttribute("data-page", "experience")
-            parent.append( ExperiencePage() )
+            parent.append(ExperiencePage())
             document.querySelector(".home-nav").classList.remove("animated")
             document.querySelector(".home-image").classList.remove("animated")
             parent.setAttribute("data-page", "experience")
         },
         class: "nav-button experience-page-button",
         children: [
-            comket.img({src: "./media/nav/experience.png"}),
-            comket.span({text: "experience"})
+            comket.img({ src: "./media/nav/experience.png" }),
+            comket.span({ text: "experience" })
         ]
     })
     return parent

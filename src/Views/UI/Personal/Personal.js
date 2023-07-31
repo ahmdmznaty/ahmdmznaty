@@ -13,15 +13,15 @@ export function PersonalButton() {
             let parent = document.querySelector(".content-page")
             parent.classList.add("active")
             parent.setAttribute("data-page", "personal")
-            parent.append( PersonalPage() )
+            parent.append(PersonalPage())
             document.querySelector(".home-nav").classList.remove("animated")
             document.querySelector(".home-image").classList.remove("animated")
             parent.setAttribute("data-page", "personal")
         },
         class: "nav-button personal-page-button",
         children: [
-            comket.img({src: "./media/nav/personal.png"}),
-            comket.span({text: "personal"})
+            comket.img({ src: "./media/nav/personal.png" }),
+            comket.span({ text: "personal" })
         ]
     })
     return parent
