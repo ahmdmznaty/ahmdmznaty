@@ -1,7 +1,5 @@
 import nodemailer from "nodemailer"
 import fs from "fs"
-import dotenv from "dotenv"
-dotenv.config()
 
 export default function messageMe(req, res) {
     if(req.url.replaceAll("/api", "").replaceAll("api", "") == "/message-me") {
