@@ -1,9 +1,18 @@
 import fs from "fs/promises"
 import mime from "mime"
+import { fileURLToPath } from 'url'
+import path from 'path'
 
 export default function frontEnd(req, res) {
+    console.log("Front-end request")
     if (req.url === "/") {
-        fs.readFile("./src/Views/index.html").then(
+        console.log("here")
+        const __filename = fileURLToPath(import.meta.url)
+        const __dirname = path.dirname(__filename)
+        console.log(__dirname)
+        console.log(__filename)
+        console.log(path.join(__dirname, "../Views/index.html"))
+        fs.readFile(path.join(__dirname, "../Views/index.html")).then(
             (html) => {
                 res.setHeader("Content-Type", "text/html")
                 res.statusCode = 200
