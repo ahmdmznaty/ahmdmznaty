@@ -6,7 +6,7 @@ import url from "url";
 
 export default function frontEnd(req, res) {
     console.log("Front-end request")
-    const pathname = url.parse(request.url).pathname;
+    const pathname = url.parse(req.url).pathname;
     if(pathname === "/") {
         console.log("here")
         const __filename = fileURLToPath(import.meta.url)
