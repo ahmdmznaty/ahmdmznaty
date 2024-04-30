@@ -1,33 +1,88 @@
 let technicalSkills = [
     {
         title: "HTML",
-        percentage: 85,
+        percentage: 80,
         description: "Builds The Structure"
     },
     {
         title: "CSS",
-        percentage: 75,
+        percentage: 70,
         description: "Style & Layout"
     },
     {
         title: "Javascript",
-        percentage: 68,
+        percentage: 75,
         description: "Activity & Behavior"
     },
     {
         title: "Node JS",
-        percentage: 60,
+        percentage: 70,
         description: "Server Side"
     },
     {
         title: "Express JS",
-        percentage: 48,
+        percentage: 68,
         description: "API Controller"
     },
     {
         title: "React JS",
-        percentage: 53,
+        percentage: 75,
         description: "Component Library :)"
+    },
+    {
+        title: "MongoDB",
+        percentage: 78,
+        description: "NoSQL Database"
+    },
+    {
+        title: "MySQL",
+        percentage: 64,
+        description: "SQL Database"
+    },
+    {
+        title: "Json Web Token",
+        percentage: 90,
+        description: "Secure Your Transferring"
+    },
+    {
+        title: "NextJS",
+        percentage: 63,
+        description: "Being SEO Master With Static Sites"
+    },
+    {
+        title: "Material UI",
+        percentage: 88,
+        description: "Save Time, Build With MUI"
+    },
+    {
+        title: "Redux",
+        percentage: 61,
+        description: "Store Global Application State"
+    },
+    {
+        title: "MapBox",
+        percentage: 76,
+        description: "API For Maps & Locations"
+    },
+    {
+        title: "Command Line",
+        percentage: 79,
+        description: "Control Our Computers :)",
+    },
+    {
+        title: "Git",
+        percentage: 81,
+        description: "Version Control System"
+    },
+    {
+        title: "GitHub",
+        percentage: 73,
+        description: "Git Remote Controller"
+    },
+    {
+        title: "VS Code",
+        percentage: 83,
+        description: "Text Editor Or IDE :)"
     },
     {
         title: "Swiper JS",
@@ -41,7 +96,7 @@ let technicalSkills = [
     },
     {
         title: "Tailwind CSS",
-        percentage: 47,
+        percentage: 58,
         description: "Utility Classes Library",
     },
     {
@@ -50,88 +105,117 @@ let technicalSkills = [
         description: "Components & Utility Classes",
     },
     {
-        title: "Sass", percentage: 47, description: "Style Preprocessor" },
+        title: "Sass",
+        percentage: 54,
+        description: "Style Preprocessor" },
     {
-        title: "TypeScript", percentage: 60, description: "Type Based Scripts"
+        title: "TypeScript",
+        percentage: 60,
+        description: "Type Based Scripts"
+    },
+    {
+        title: "Postman",
+        percentage: 94,
+        description: "Consume & Test Rest APIs"
+    },
+    {
+        title: "GraphQL",
+        percentage: 78,
+        description: "Query Language Based API"
+    },
+    {
+        title: "Apollo Studio",
+        percentage: 72,
+        description: "Consume & Test GraphQL APIs"
     },
     {
         title: "Snowpack",
-        percentage: 40,
+        percentage: 25,
         description: "Bundler & Server Simulation",
     },
     {
         title: "Parcel",
-        percentage: 40,
+        percentage: 25,
         description: "Bundler & Server Simulation",
     },
     {
         title: "Webpack",
-        percentage: 37,
+        percentage: 35,
         description: "The Best Bundler In The World",
     },
     {
-        title: "MongoDB",
-        percentage: 42,
-        description: "NoSQL Database"
-    },
-    {
-        title: "MySQL",
-        percentage: 43,
-        description: "SQL Database"
-    },
-    {
-        title: "MapBox",
-        percentage: 64,
-        description: "API For Maps & Locations"
-    },
-    {
-        title: "Command Line",
-        percentage: 79,
-        description: "Control Our Computers :)",
-    },
-    {
-        title: "Git",
-        percentage: 70,
-        description: "Version Control System"
-    },
-    {
-        title: "GitHub",
-        percentage: 65,
-        description: "Git Remote Controller"
-    },
-    {
-        title: "VS Code",
-        percentage: 82,
-        description: "Text Editor Or IDE :)"
-    },
-    {
         title: "Dev Tools",
-        percentage: 75,
+        percentage: 77,
         description: "Tracking The Development Process",
     },
     {
+        title: "React Native",
+        percentage: 57,
+        description: "Cross-Platform Mobile Apps With JS",
+    },
+    {
+        title: "Expo",
+        percentage: 61,
+        description: "Fast Your React Native Coding",
+    },
+    {
+        title: "PWA",
+        percentage: 64,
+        description: "Installable Web Apps",
+    },
+    {
+        title: "AWS",
+        percentage: 32,
+        description: "Storage, Hosting, Domains, And All Cloud Services",
+    },
+    {
+        title: "ChatGPT",
+        percentage: 80,
+        description: "Reach Goals With Talking To AI",
+    },
+    {
         title: "Figma",
-        percentage: 76,
+        percentage: 88,
         description: "Creating Great UIs And Prototypes",
     },
     {
         title: "Illustrator",
-        percentage: 93,
+        percentage: 83,
         description: "The Best For Vector And Graphic Design",
     },
     {
         title: "Photoshop",
-        percentage: 84,
+        percentage: 74,
         description: "Playing With Images And Good For Graphic Design",
     },
     {
+        title: "Strapi",
+        percentage: 34,
+        description: "Your Text Formatter & Blog Creator",
+    },
+    {
+        title: "UltraMSG",
+        percentage: 83,
+        description: "Send Whatsapp Messages & Media",
+    },
+    {
+        title: "Notion",
+        percentage: 92,
+        description: "Life, Project, Team Management",
+    },
+    {
+        title: "ClickUp",
+        percentage: 58,
+        description: "Agile Tasks & Sprints Manager",
+    },
+    {
         title: "Premiere Pro",
-        percentage: 43,
+        percentage: 46,
         description: "Generating And Playing With Videos",
     },
     {
         title: "XD",
-        percentage: 42,
+        percentage: 31,
         description: "One Of The Most Famous UX/UI Tools",
     },
     {
@@ -141,17 +225,17 @@ let technicalSkills = [
     },
     {
         title: "UX - UI",
-        percentage: 56,
+        percentage: 65,
         description: "Design, Arrangement, And Flow Of Your App",
     },
     {
         title: "Dart",
-        percentage: 23,
+        percentage: 19,
         description: "Programming Language For Flutter",
     },
     {
         title: "Flutter",
-        percentage: 32,
+        percentage: 24,
         description: "Mobile Development With Dart",
     },
     {
@@ -161,7 +245,7 @@ let technicalSkills = [
     },
     {
         title: "Django",
-        percentage: 33,
+        percentage: 26,
         description: "Python Back End Framework",
     },
     {
@@ -171,7 +255,7 @@ let technicalSkills = [
     },
     {
         title: "PHP",
-        percentage: 29,
+        percentage: 26,
         description: "Historical Back End Technology :)",
     },
 ];

@@ -68,6 +68,20 @@ export default function SoftSkillsSection() {
                             comket.span({text: "Communication skills"})
                         ]
                     }),
+                    comket.div({
+                        class: "soft-skill-card",
+                        children: [
+                            comket.Element("ion-icon", {name: "flame"}),
+                            comket.span({text: "Agile methodology"})
+                        ]
+                    }),
+                    comket.div({
+                        class: "soft-skill-card",
+                        children: [
+                            comket.Element("ion-icon", {name: "flame"}),
+                            comket.span({text: "Mentorship skills"})
+                        ]
+                    }),
                 ]
             })
         ]

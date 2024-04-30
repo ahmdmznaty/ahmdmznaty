@@ -2,7 +2,7 @@ import comket from "../../../dependencies/comket.js"
 
 
 export default function WelcomeSection() {
-    let jobTitles = [" Full-Stack Developer    ", " UI/UX Designer    ", " CEO of webket    "]
+    let jobTitles = [" Software Engineer . . .  ", " Coding Youtuber . . .  ", " Full-Stack Developer . . .    "]
     let animatedJobTitle = comket.h3({ id: "animatedJobTitle", text: "" })
     let index = 0
     let letter = 0
@@ -20,11 +20,11 @@ export default function WelcomeSection() {
             }
         }
         else clearInterval(fillin)
-    }, 200);
+    }, 130);
     let parent = comket.div({
         class: "welcome-section",
         children: [
-            comket.img({ class: "main-image", src: "./media/cutted.png", draggable: "false" }),
+            comket.img({ class: "main-image", src: "./media/cutted2.png", draggable: "false" }),
             comket.div({
                 class: "welcome-details",
                 children: [

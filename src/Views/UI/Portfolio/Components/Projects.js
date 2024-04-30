@@ -25,8 +25,8 @@ function filterCards(parent) {
                     comket.div({
                         class: "project-actions",
                         children: [
-                            comket.a({ text: "Code", target: "_blank", href: project.githubURL }),
-                            comket.a({ text: "View", target: "_blank", href: project.viewURL }),
+                            project.sourceURL ? comket.a({ text: "Source", target: "_blank", href: project.sourceURL }) : comket.i({}),
+                            project.viewURL ? comket.a({ text: "View", target: "_blank", href: project.viewURL }) : comket.i({})
                         ]
                     })
                 ]

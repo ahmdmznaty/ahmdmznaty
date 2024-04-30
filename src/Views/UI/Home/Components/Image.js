@@ -7,7 +7,7 @@ export default function Image() {
         children: [
             comket.div({class: "img-overlay"}),
             comket.img({class: "img clip-image", src: "./media/clip.svg"}),
-            comket.img({class: "img my-image", src: "./media/myImage.jpg"}),
+            comket.img({class: "img my-image", src: "./media/myImage2.png"}),
         ]
     })
     return parent
