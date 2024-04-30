@@ -2,10 +2,12 @@ import fs from "fs/promises"
 import mime from "mime"
 import { fileURLToPath } from 'url'
 import path from 'path'
+import url from "url";
 
 export default function frontEnd(req, res) {
     console.log("Front-end request")
-    if (req.url === "/") {
+    const pathname = url.parse(request.url).pathname;
+    if(pathname === "/") {
         console.log("here")
         const __filename = fileURLToPath(import.meta.url)
         const __dirname = path.dirname(__filename)
