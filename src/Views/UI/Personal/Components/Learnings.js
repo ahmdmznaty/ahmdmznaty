@@ -48,7 +48,7 @@ export default function LearningsSection() {
                         class: "learning-card",
                         children: [
                             comket.Element("ion-icon", {name: "flame"}),
-                            comket.span({text: "Javascript / Ecmascript"})
+                            comket.span({text: "JavaScript / TypeScript"})
                         ]
                     }),
                     comket.div({
@@ -70,6 +70,13 @@ export default function LearningsSection() {
                         children: [
                             comket.Element("ion-icon", {name: "flame"}),
                             comket.span({text: "NodeJS / ExpressJS for Back-end"})
+                        ]
+                    }),
+                    comket.div({
+                        class: "learning-card",
+                        children: [
+                            comket.Element("ion-icon", {name: "flame"}),
+                            comket.span({text: "Rest / GraphQL for APIs"})
                         ]
                     }),
                     comket.div({

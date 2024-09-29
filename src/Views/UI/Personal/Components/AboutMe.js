@@ -12,11 +12,10 @@ export default function AboutMeSection() {
                     comket.p({
                         class: "summary-text",
                         children: [
-                            "Welcome mr visitor, it’s an honor to see you here in my modest portfolio. ",
-                            "I’m Ahmed M. Znaty, a Software Engineer for more than { 6 } years. ",
-                            "I can help you in your tech journey, building staff and increase your community or sales. ",
-                            "Managing your tech teams, working on your existing projects, and anything related to tech world can be my job with you. ",
-                            "Don’t move back, take the step and contact me"
+                            "Welcome mr visitor, it’s an honor to see you reading my modest cv.",
+                            "I’ve been a software engineer for more than { 6 } years.",
+                            "I have good programming skills and I’m a specialist back-end developer.",
+                            "I love working in teams, and adore solving problems."
                         ]
                     }),
                     comket.div({

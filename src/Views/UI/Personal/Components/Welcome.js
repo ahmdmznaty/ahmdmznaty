@@ -2,7 +2,7 @@ import comket from "../../../dependencies/comket.js"
 
 
 export default function WelcomeSection() {
-    let jobTitles = [" Software Engineer . . .  ", " Coding Youtuber . . .  ", " Full-Stack Developer . . .    "]
+    let jobTitles = [" Software Engineer . . .  ", " Full-Stack Developer . . .    "]
     let animatedJobTitle = comket.h3({ id: "animatedJobTitle", text: "" })
     let index = 0
     let letter = 0
